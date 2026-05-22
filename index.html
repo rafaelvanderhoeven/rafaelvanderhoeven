@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael van der Hoeven</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
+        /* 1. Tell the browser how to load your custom font from your repository */
+        @font-face {
+            font-family: 'MyLinuxLibertine';
+            /* MAKE SURE THE FILE NAME BELOW MATCHES YOUR UPLOADED FILE EXACTLY */
+            src: url(LinLibertine_R.woff) format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         /* General Setup */
         body {
-            font-family: "EB Garamond", "Linux Libertine O", "Linux Libertine", Georgia, serif;
+            /* 2. Put your newly defined font at the absolute front of the command chain */
+            font-family: 'MyLinuxLibertine', "Linux Libertine O", "Linux Libertine", Georgia, serif;
             line-height: 1.6;
             color: #222;
             background-color: #fbfaf7; /* Slightly off-white background */
